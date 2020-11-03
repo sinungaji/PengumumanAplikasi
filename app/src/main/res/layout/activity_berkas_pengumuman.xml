@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    app:cardBackgroundColor="@color/colorAbu"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="@dimen/fab_margin"
+    app:cardMaxElevation="@dimen/fab_margin"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/fab_margin"
+    android:id="@+id/cvBerkas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judulFileTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="bottom|start"
+                android:text="Judul File"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/tglpostingfileTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="bottom|start"
+                android:text="Tgl Posting File"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/keteranganFileTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="bottom|start"
+                android:text="Keterangan File"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_input_24"
+                app:tint="@color/colorWhite"/>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

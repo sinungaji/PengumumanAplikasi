@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="235dp"
+    app:cardBackgroundColor="@null"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:background="@drawable/gradient"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tanggalTayangTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="tgl Tayang"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:background="@color/colorBlack"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/tumbnail"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/judulpengumumanTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@id/tumbnail"
+                    android:layout_toRightOf="@id/tumbnail"
+                    android:text="Judul Pengumuman"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/isipengumumanTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judulpengumumanTV"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/tumbnail"
+                    android:layout_toRightOf="@id/tumbnail"
+                    android:text="Isi Pengumuman"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorTeks2"
+                    android:textSize="15sp"
+                    android:maxLines="3"/>
+
+                <TextView
+                    android:id="@+id/tgltayangpengumumanTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isipengumumanTV"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/tumbnail"
+                    android:layout_toRightOf="@id/tumbnail"
+                    android:text="Tanggal Tayang Pengumuman"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorTeks2"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:id="@+id/tglberakhirpengumumanTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tgltayangpengumumanTV"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/tumbnail"
+                    android:layout_toRightOf="@id/tumbnail"
+                    android:text="Tanggal Berakhir Pengumuman"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/colorTeks2"
+                    android:textSize="9sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

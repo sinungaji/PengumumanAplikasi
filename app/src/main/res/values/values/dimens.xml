@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="fab_margin_pengumuman_pribadi">8dp</dimen>
+    <dimen name="app_bar_height_pengumuman_pribadi">180dp</dimen>
+    <dimen name="text_margin_pengumuman_pribadi">10dp</dimen>
+
+    <dimen name="fab_margin_pengumuman">2dp</dimen>
+    <dimen name="app_bar_height_pengumuman">180dp</dimen>
+    <dimen name="text_margin_pengumuman">10dp</dimen>
+</resources>
